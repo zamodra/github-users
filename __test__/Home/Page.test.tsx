@@ -1,5 +1,7 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import Home, { useUserRepos, useUserSearch } from "@/app/page";
+import Home from "@/app/page";
+import useUserRepos from "@/app/hooks/useUserRepos";
+import useUserSearch from "@/app/hooks/useUserSearch";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from 'react';
 
@@ -87,7 +89,6 @@ describe("Home Component", () => {
   });
 
   it("renders the search form, user list, and pagination", async () => {
-    mockedUseUserRepos.mockReturnValue([]);
 
     renderWithClient(<Home />);
 
@@ -99,7 +100,6 @@ describe("Home Component", () => {
   });
 
   it("updates the search query and resets the page when the form is submitted", async () => {
-    mockedUseUserRepos.mockReturnValue([]);
 
     renderWithClient(<Home />);
 

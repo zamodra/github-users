@@ -1,5 +1,5 @@
 import { renderHook, waitFor } from "@testing-library/react";
-import { useUserSearch } from "@/app/page";
+import useUserSearch from "@/app/hooks/useUserSearch";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from 'react';
 
