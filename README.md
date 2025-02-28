@@ -1,7 +1,7 @@
 ## 📡 Live Site
 Welcome to the **Git Repo Search** project! This is a Next.js-based application.  
 
-🔗 **Live Site:** [https://hitopiatest.netlify.app/](https://zmdr-gitrepo-search.netlify.app/)
+🔗 **Live Site:** [https://zmdr-gitrepo-search.netlify.app/](https://zmdr-gitrepo-search.netlify.app/)
 
 ## 📡 About Repo
 This application is using next.js 15 + app router without src
