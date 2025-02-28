@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 📡 Live Site
+Welcome to the **Git Repo Search** project! This is a Next.js-based application.  
 
-## Getting Started
+🔗 **Live Site:** [https://zmdr-gitrepo-search.netlify.app/](https://zmdr-gitrepo-search.netlify.app/)
 
-First, run the development server:
+## 📡 About Repo
+This application is using next.js 15 + app router without src
+
+## 🚀 Prerequisites
+
+Ensure you have the following installed before setting up the project:
+
+- **Node.js**: (RECOMMENDED) Version **22.3.0** or higher.
+- **npm**: Comes bundled with Node.js.
+
+---
+
+## 🔧 Initial Setup
+
+1. **Clone the repository**  
+   Replace `<repository-url>` with your actual repository link:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. **Install dependencies**  
+   Run the following command to install required packages:
+
+   ```bash
+   npm install
+   ```
+
+---
+
+## 🛠 Environment Variables
+
+Before running the application, create a `.env` file in the root directory and add the following environment variables:
+
+```env
+NEXT_PUBLIC_CLIENT_SECRET=[GITHUB_TOKEN]
+```
+
+Replace the placeholder values with your actual configuration.
+
+---
+
+## ▶ Running Locally
+
+Start the development server with:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+By default, the application will be available at:  
+🔗 [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you need to run it on a different port, modify the script in `package.json` accordingly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 Running Tests Locally
 
-To learn more about Next.js, take a look at the following resources:
+To run tests in **watch mode**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run test:watch
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run all tests once:
 
-## Deploy on Vercel
+```bash
+npm run test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Production Build
+
+To build and start the production version of the application:
+
+1. **Build the application**:
+
+   ```bash
+   npm run build
+   ```
+
+2. **Start the application**:
+
+   ```bash
+   npm run start
+   ```
+
+By default, it will run on [http://localhost:3000](http://localhost:3000), but you can specify a different port by modifying the start command in `package.json`.
+
+---
+
+For redeployment, push changes to the main branch (or trigger a manual deploy in Netlify).
+
+---
