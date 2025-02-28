@@ -33,7 +33,7 @@ describe("UserItem Component", () => {
   test("shows loading skeleton when repositories are loading", () => {
     const { container } = render(<UserItem user={mockUser} repos={[]} loadingRepos={true} />);
 
-    expect(container.querySelector("p")).not.toBeInTheDocument(); // No "No repositories found."
+    expect(container.querySelector("p")).not.toBeInTheDocument();
   });
 
   test("renders repository list when repositories are available", () => {
