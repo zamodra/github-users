@@ -47,7 +47,7 @@ const Home = () => {
   }
 
   return (
-    <div className="max-w-[400px] w-full mx-auto h-screen text-xs font-medium flex flex-col scrollbar-hide overflow-y-none overflow-x-none">
+    <div className="max-w-[400px] p-3 w-full mx-auto h-screen text-xs font-medium flex flex-col scrollbar-hide overflow-y-none overflow-x-none">
       <SearchForm form={form} onSubmit={onSubmit}/>      
       <Accordion type="single" collapsible>
         <UserList users={users?.users} loadingUsers={loadingUsers} repoQueries={repoQueries} />
